@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Promise Scene with Singing</title>
+    
+</head>
+<body>
+    <button onclick="playSong()">Play Song</button>
+    <audio id="song-audio" src="/asset/ssstik.io_1720705397993.mp3" type="audio/mp3"></audio>
+    <div class="scene lover-scene">
+        <div class="background-heart"></div>
+        <div class="character boy">
+            <div class="hand boy-hand"></div>
+            <div class="lyrics">
+                <p id="lyrics-line"></p>
+            </div>
+        </div>
+        <div class="character girl">
+            <div class="hand girl-hand"></div>
+        </div>
+        <img src="https://media.tenor.com/1VT0Zromz_gAAAAM/heart-red.gif" class="gif-heart" alt="Google GIF Heart">
+    </div>
+    <script src="trend.js"></script>
+    <style>
+        .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.lover-scene {
+    position: relative;
+}
+
+.background-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffcccc;
+    z-index: -1;
+}
+
+.scene {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.character {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boy, .girl {
+    width: 300px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative; /* Ensure relative positioning */
+}
+
+.boy {
+    background-image: url('/asset/428621388_381584844570680_1224349955209650581_n.jpg');
+}
+
+.girl {
+    background-image: url('/asset/438224818_3797828920540160_9158036450615259110_n.jpg');
+}
+
+.hand {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 45%;
+}
+
+.boy-hand {
+    background-image: url('https://media.tenor.com/-2wcu7syPhQAAAAj/me-hands-up.gif');
+    left: 16%;
+}
+
+.girl-hand {
+    background-image: url('https://media.tenor.com/1yDkJOVClPwAAAAj/backhand-index-pointing-left-joypixels.gif');
+    right: 30%;
+}
+
+.gif-heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+}
+
+.lyrics {
+    position: absolute;
+    top: 10%; /* Adjust top position to place above the boy's head */
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</body>
+</html>
